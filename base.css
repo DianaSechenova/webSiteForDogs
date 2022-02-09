@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;800&family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
+}
+@font-face {
+  font-family: "Nunito", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;800&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #1a1a1a;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+button,
+input {
+  border: none;
+  padding: 0;
+  background: none;
+}
+a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+button {
+  cursor: pointer;
+}
+.content-wrapper {
+  width: 100%;
+  max-width: calc(1000px + 2rem);
+  margin: 0 auto;
+  /* padding: 0 1rem; */
+}
+.text-bold {
+  font-weight: 800;
+}
+.text-regular {
+  font-weight: 500;
+}
