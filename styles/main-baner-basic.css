@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  margin-top: 40px;
+  padding: 0 1rem;
+}
+.main-baner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.baner-basic {
+  background: #ff8f27;
+  border-radius: var(--border-r);
+  max-height: 260px;
+  overflow: hidden;
+  /* 
+  background: url("../images/basic-baner/%@2x.png") right top no-repeat #fda328;
+  background-size: 400px; */
+}
+.main-baner__text-block {
+  max-width: 390px;
+  margin: 52px 25px 52px 87px;
+}
+.main-baner__text-block_header {
+  font-weight: 900;
+  font-size: 47px;
+  line-height: 50px;
+  color: var(--white);
+}
+.main-baner__text-block_description {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+  color: var(--white);
+  margin-top: 24px;
+}
+.main-baner__image-block_wrapper {
+  width: 100%;
+  height: 100%;
+}
+.main-baner__image-block {
+  /* background: url("/images/basic-baner/%.png") right top no-repeat #fda328;
+  background-size: contain;
+  color: #fda328; */
+  max-width: 412px;
+  max-height: 234px;
+  margin-top: 26px;
+}
+.main-baner__image-block_img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 891px) {
+  .main-baner__text-block_header {
+    font-size: 41px;
+    line-height: 38px;
+  }
+  .main-baner__text-block_description {
+    font-size: 21px;
+    line-height: 27px;
+  }
+}
+@media (max-width: 769px) {
+  .main-baner__text-block {
+    width: 100%;
+  }
+  .main-baner__text-block_header {
+    font-size: 31px;
+    line-height: 32px;
+  }
+  .main-baner__text-block_description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .main-baner__image-block {
+    max-width: 386px;
+  }
+}
+@media (max-width: 600px) {
+  .baner-basic {
+    max-height: 152px;
+  }
+  .main-baner__text-block_header {
+    font-size: 21px;
+    line-height: 23px;
+  }
+  .main-baner__text-block_description {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .main-baner__text-block {
+    max-width: 180px;
+    margin: 40px 25px 40px 18px;
+  }
+  .main-baner__image-block {
+    max-width: 204px;
+    max-height: 144px;
+    transform: translateX(25%);
+  }
+}

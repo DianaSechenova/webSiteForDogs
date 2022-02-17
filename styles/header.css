@@ -1,0 +1,143 @@
+.header-conteiner {
+  width: 100%;
+  /* height: 100%; */
+  max-height: 744px;
+  padding: 0 1rem;
+  background: linear-gradient(185deg, var(--yellow-bg) 86%, var(--white) 86%);
+}
+.header {
+  max-height: 152px;
+  padding: 40px 0px 40px 0px;
+  width: 100%;
+  background: #fed700;
+}
+.header,
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* logo + text */
+.header__logo {
+  max-width: 191px;
+  /* width: 25%; */
+  margin-right: 80px;
+}
+.header__logo_img {
+  margin-right: 16px;
+}
+.header__logo_img {
+  width: 72px;
+}
+.header__logo_img > img {
+  width: 100%;
+}
+.header__logo_text {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+/* input-search */
+.header__form {
+  width: 100%;
+  margin-right: 80px;
+}
+.header__form {
+  position: relative;
+}
+.header__form_item {
+  background: url("../images/Forms/Input/Icons/Search@2x.png") no-repeat 94% 50%
+    var(--white);
+  background-size: 16px;
+  border-radius: 24px;
+  width: 100%;
+  line-height: 20px;
+  color: #7b8e98;
+  padding: 14px 20px;
+}
+
+/* icons + burger-main */
+.header__icons {
+  /* width: 25%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.header__icons_item {
+  width: 24px;
+  height: 24px;
+  margin-right: 26px;
+  position: relative;
+}
+.header__icons_item > img {
+  width: 100%;
+}
+.header__icons_item:last-child {
+  margin-right: 0px;
+}
+.num-bubl::before {
+  content: "12";
+  background: #01a54e;
+  border: 2px solid #fed700;
+  border-radius: 20px;
+  padding: 1px 4px;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  color: var(--white);
+}
+.header__burger {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  .header-conteiner {
+    background: var(--yellow-bg);
+    max-height: 640px;
+  }
+  .header {
+    /* max-height: 72px; */
+    padding: 44px 0px 12px 0px;
+  }
+  .header__logo,
+  .header__form {
+    margin-right: 32px;
+  }
+  .header__logo_img {
+    margin-right: 0px;
+  }
+  .header__logo_img {
+    width: 48px;
+    height: 48px;
+  }
+  .header__logo_text {
+    display: none;
+  }
+  .header__icons {
+    display: none;
+  }
+  /* бургер */
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    color: #263238;
+    left: 0;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+}

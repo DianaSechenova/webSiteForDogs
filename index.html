@@ -4,15 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="base.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/header-banner.css">
+  <link rel="stylesheet" href="./styles/header-nav.css">
+  <link rel="stylesheet" href="./styles/main-baner-basic.css">
+  <link rel="stylesheet" href="./styles/main-product.css">
   <title>Home</title>
 </head>
 <body>
-  <div class="conteiner">
+  <div class="header-conteiner">
     <header class="content-wrapper header">
       <div class="header__logo">
-        <img src="./images/logo/Frame 13@2x.png" class="header__logo_img" alt="Logo">
+        <div class="header__logo_img" >
+          <img src="./images/logo/Frame 13@2x.png" alt="Logo">
+        </div>
         <div class="header__logo_text">HorDog</div>
       </div>
       <form class="header__form" action="">
@@ -33,18 +39,18 @@
         </button>
       </div>
     </header>
-    <section class="content-wrapper section section__banner">
-      <div class="section__banner_column text-block banner__column  banner__column_left">
-        <h1 class="text-block__head">Крафтовые лакомства для собак</h1>
-        <p class="text-block__description">Всегда свежие лакомства ручной работы с доставкой по России и Миру</p>
-        <button class="text-block__more-btn">Каталог 
-          <span class="text-block__more-btn_control">
+    <section class="content-wrapper section-banner">
+      <div class="section-banner__text-block">
+        <h1 class="section-banner__text-block_head">Крафтовые лакомства для собак</h1>
+        <p class="section-banner__text-block_description">Всегда свежие лакомства ручной работы с доставкой по России и Миру</p>
+        <button class="section-banner__text-block_more-btn">Каталог 
+          <span class="more-btn_control">
             <img src="./images/arrow/ic-right-arrow@2x.png" alt="arrow">
           </span>
         </button>
       </div>
-      <div class="section__banner_column banner__column banner__column_rigth">
-        <div class="img-block"></div>
+      <div class="section-banner__image-block">
+        <div class="section-banner__image-block_img"></div>
       </div>
     </section>
     <section class="content-wrapper page-nav__wrapper">
@@ -78,6 +84,93 @@
       </div>
     </section>
   </div>
-  
+  <main class="main">
+    <section class="content-wrapper main-baner baner-basic">
+      <div class="main-baner__text-block">
+        <h2 class="main-baner__text-block_header">Подарок за первый заказ!</h2>
+        <p class="main-baner__text-block_description">Легкое говяжье - пластины</p>
+      </div>
+      <div class="main-baner__image-block">
+          <img class="main-baner__image-block_img" src="./images/basic-baner/1973_miska-dlya-sobak-metallicheskaya-trixie-na-rezinovom-osnovanii-450-ml-14-sm 1@2x.png" alt="">
+      </div>
+    </section>
+    <section class="content-wrapper main-section-products">
+      <div class="main-section-products__header">
+        <h1 class="main-section-products__header_title">Хиты</h1>
+        <div class="main-section-products__header_control"></div>
+      </div>
+      <div class="main-section-products__cards_wrapper">
+        <div class="main-section-products__cards cards">
+          <div class="main-section-products__cards_image-wrapper">
+            <div class="badge badge-sale badge-new">-30%</div>
+            <div class="cards__image">
+              <img src="./images/products-card/Card/image@2x.png" alt="">
+            </div>
+            <div class="select">
+              <img class="select__icon" src="./images/products-card/Icons/Favorites@2x.png" alt="">
+            </div>
+          </div>
+          <div class="main-section-products__cards_content cards__content">
+            <div class="cards__content_prise old-prise active-sale">840 ₽</div>
+            <div class="cards__content_subtitle">1 шт</div>
+            <div class="cards__content_title">Рога оленя для собак весом от 10 до 30 кг. Размер L</div>
+          </div>
+          <button class="main-section-products__cards_button">В корзину</button>
+        </div>
+        <div class="main-section-products__cards cards">
+          <div class="main-section-products__cards_image-wrapper">
+            <!-- <div class="badge badge-sale badge-new">-30%</div> -->
+            <div class="cards__image">
+              <img src="./images/products-card/Card2/image@2x.png" alt="">
+            </div>
+            <div class="select">
+              <img class="select__icon" src="./images/products-card/Icons/Favorites@2x.png" alt="">
+            </div>
+          </div>
+          <div class="main-section-products__cards_content cards__content">
+            <div class="cards__content_prise old-prise">450 ₽</div>
+            <div class="cards__content_subtitle">200 мл</div>
+            <div class="cards__content_title">Сельдевое масло</div>
+          </div>
+          <button class="main-section-products__cards_button">В корзину</button>
+        </div>
+        <div class="main-section-products__cards cards">
+          <div class="main-section-products__cards_image-wrapper">
+            <div class="badge badge-sale">-10%</div>
+            <div class="cards__image">
+              <img src="./images/products-card/Card3/image@2x.png" alt="">
+            </div>
+            <div class="select">
+              <img class="select__icon" src="./images/products-card/Icons/Favorites@2x.png" alt="">
+            </div>
+          </div>
+          <div class="main-section-products__cards_content cards__content">
+            <div class="cards__content_prise old-prise active-sale">495 ₽</div>
+            <div class="cards__content_subtitle">100 г</div>
+            <div class="cards__content_title">Бублик из бычьего корня</div>
+          </div>
+          <button class="main-section-products__cards_button">В корзину</button>
+        </div>
+        <div class="main-section-products__cards cards">
+          <div class="main-section-products__cards_image-wrapper">
+            <div class="badge badge-new">Новинка</div>
+            <div class="cards__image">
+              <img src="./images/products-card/Card4/image@2x.png" alt="">
+            </div>
+            <div class="select">
+              <img class="select__icon" src="./images/products-card/Icons/Favorites@2x.png" alt="">
+            </div>
+          </div>
+          <div class="main-section-products__cards_content cards__content">
+            <div class="cards__content_prise old-prise">240 ₽</div>
+            <div class="cards__content_subtitle">1 шт</div>
+            <div class="cards__content_title">Лопаточный хрящ говяжий для собак</div>
+          </div>
+          <button class="main-section-products__cards_button">В корзину</button>
+        </div>
+      </div>
+      
+    </section>
+  </main>
 </body>
 </html>

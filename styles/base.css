@@ -1,10 +1,17 @@
+:root {
+  --yellow-bg: #fed700;
+  --white: #ffffff;
+  --main-bg: #e5e5e5;
+  --border-r: 20px;
+  --active: #F44336;
+}
 @font-face {
   font-family: "M PLUS Rounded 1c", sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;800&family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
 }
 @font-face {
   font-family: "Nunito", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;800&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100&display=swap");
 }
 * {
   box-sizing: border-box;
@@ -17,6 +24,8 @@ html {
 body {
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
+  background: var(--white);
 }
 body,
 h1,
@@ -56,6 +65,7 @@ img {
   margin: 0 auto;
   /* padding: 0 1rem; */
 }
+
 .text-bold {
   font-weight: 800;
 }
