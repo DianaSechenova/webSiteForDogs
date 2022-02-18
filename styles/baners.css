@@ -11,16 +11,7 @@
 .section-baners__wrapper:last-child {
   margin-right: 0px;
 }
-.baners-yellow {
-  background: url("../images/baners/training-set/Frame\ 56@2x.png") right center
-    no-repeat #d8a217;
-  background-size: contain;
-}
-.baners-blue {
-  background: url("../images/baners/oils/Frame\ 56@2x.png") right center
-    no-repeat #24b5be;
-  background-size: contain;
-}
+
 .section-baners__content {
   padding: 51px 0px 42px 51px;
 }
@@ -35,7 +26,7 @@
   font-size: 20px;
   line-height: 24px;
   color: var(--white);
-  margin-top: 8px;
+  margin-top: 16px;
 }
 .section-baners__content_price {
   font-weight: 800;
@@ -43,6 +34,26 @@
   line-height: 32px;
   color: var(--white);
   margin-top: 20px;
+}
+.baners-yellow {
+  background: url("../images/baners/training-set/Frame\ 56@2x.png") right center
+    no-repeat #d8a217;
+  background-size: contain;
+}
+.baners-blue {
+  background: url("../images/baners/oils/Frame\ 56@2x.png") right center
+    no-repeat #24b5be;
+  background-size: contain;
+}
+.baners-green {
+  background: url("../images/baners/green/Frame\ 56@2x.png") right center
+    no-repeat #9ccd55;
+  background-size: contain;
+}
+.baners-orange {
+  background: url("../images/baners/orange/Frame\ 56@2x.png") right center
+    no-repeat #db6825;
+  background-size: contain;
 }
 /* slider */
 .slider__nav {
