@@ -6,7 +6,7 @@
   margin-top: 40px;
   padding: 0 1rem;
 }
-.main-baner {
+.section-baner {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -20,28 +20,28 @@
   background: url("../images/basic-baner/%@2x.png") right top no-repeat #fda328;
   background-size: 400px; */
 }
-.main-baner__text-block {
+.section-baner__text-block {
   max-width: 390px;
   margin: 52px 25px 52px 87px;
 }
-.main-baner__text-block_header {
+.section-baner__text-block_title {
   font-weight: 900;
   font-size: 47px;
   line-height: 50px;
   color: var(--white);
 }
-.main-baner__text-block_description {
+.section-baner__text-block_description {
   font-weight: 600;
   font-size: 28px;
   line-height: 32px;
   color: var(--white);
   margin-top: 24px;
 }
-.main-baner__image-block_wrapper {
+/* .main-baner__image-block_wrapper {
   width: 100%;
   height: 100%;
-}
-.main-baner__image-block {
+} */
+.section-baner__image-block {
   /* background: url("/images/basic-baner/%.png") right top no-repeat #fda328;
   background-size: contain;
   color: #fda328; */
@@ -49,55 +49,115 @@
   max-height: 234px;
   margin-top: 26px;
 }
-.main-baner__image-block_img {
+.section-baner__image-block_img {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 891px) {
-  .main-baner__text-block_header {
-    font-size: 41px;
-    line-height: 38px;
+@media (max-width: 943px) {
+  .section-baner__image-block {
+    max-width: 406px;
   }
-  .main-baner__text-block_description {
+  .section-baner__text-block_title {
+    font-size: 45px;
+    line-height: 48px;
+  }
+  .section-baner__text-block_description {
     font-size: 21px;
-    line-height: 27px;
+    line-height: 19px;
   }
 }
-@media (max-width: 769px) {
-  .main-baner__text-block {
-    width: 100%;
+@media (max-width: 871px) {
+  .section-baner__image-block {
+    max-width: 400px;
   }
-  .main-baner__text-block_header {
-    font-size: 31px;
-    line-height: 32px;
+  .section-baner__text-block_title {
+    font-size: 40px;
+    line-height: 46px;
   }
-  .main-baner__text-block_description {
+  .section-baner__image-block {
+    max-width: 399px;
+  }
+}
+@media (max-width: 833px) {
+  .section-baner__image-block {
+    max-width: 400px;
+  }
+  .section-baner__text-block_title {
+    font-size: 38px;
+    line-height: 41px;
+  }
+  .section-baner__text-block_description {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 16px;
   }
-  .main-baner__image-block {
-    max-width: 386px;
+  .section-baner__image-block {
+    max-width: 345px;
   }
 }
-@media (max-width: 600px) {
-  .baner-basic {
-    max-height: 152px;
+
+@media (max-width: 760px) {
+  .section-baner__image-block {
+    max-width: 323px;
   }
-  .main-baner__text-block_header {
-    font-size: 21px;
+  .section-baner__text-block_title {
+    font-size: 35px;
+    line-height: 39px;
+  }
+  .section-baner__text-block_description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 716px) {
+  .section-baner__image-block {
+    max-width: 300px;
+  }
+  .section-baner__text-block_title {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .section-baner__text-block_description {
+    font-size: 14px;
+  }
+}
+@media (max-width: 658px) {
+  .section-baner__image-block {
+    max-width: 204px;
+    max-height: 144px;
+    margin-top: 23px;
+  }
+  .section-baner__text-block_title {
+    font-size: 22px;
     line-height: 23px;
   }
-  .main-baner__text-block_description {
+  .section-baner__text-block_description {
     font-size: 12px;
     line-height: 15px;
   }
-  .main-baner__text-block {
+}
+@media (max-width: 636px) {
+  .section-baner__image-block {
+    max-width: 277px;
+    max-height: 144px;
+  }
+  .section-baner__text-block {
     max-width: 180px;
     margin: 40px 25px 40px 18px;
   }
-  .main-baner__image-block {
-    max-width: 204px;
-    max-height: 144px;
-    transform: translateX(25%);
+}
+@media (max-width: 518px) {
+  .section-baner__image-block {
+    width: 240px;
+    position: relative;
+    display: block;
+  }
+  .section-baner__image-block_img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 58px;
+  }
+  .section-baner__text-block {
+    margin: 40px 0px 40px 18px;
   }
 }

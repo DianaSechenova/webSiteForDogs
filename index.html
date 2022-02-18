@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./styles/header-nav.css">
   <link rel="stylesheet" href="./styles/main-baner-basic.css">
   <link rel="stylesheet" href="./styles/main-product.css">
+  <link rel="stylesheet" href="./styles/baners.css">
   <title>Home</title>
 </head>
 <body>
@@ -85,13 +86,13 @@
     </section>
   </div>
   <main class="main">
-    <section class="content-wrapper main-baner baner-basic">
-      <div class="main-baner__text-block">
-        <h2 class="main-baner__text-block_header">Подарок за первый заказ!</h2>
-        <p class="main-baner__text-block_description">Легкое говяжье - пластины</p>
+    <section class="content-wrapper section-baner baner-basic">
+      <div class="section-baner__text-block">
+        <h2 class="section-baner__text-block_title">Подарок за первый заказ!</h2>
+        <p class="section-baner__text-block_description">Легкое говяжье - пластины</p>
       </div>
-      <div class="main-baner__image-block">
-          <img class="main-baner__image-block_img" src="./images/basic-baner/1973_miska-dlya-sobak-metallicheskaya-trixie-na-rezinovom-osnovanii-450-ml-14-sm 1@2x.png" alt="">
+      <div class="section-baner__image-block">
+          <img class="section-baner__image-block_img" src="./images/basic-baner/1973_miska-dlya-sobak-metallicheskaya-trixie-na-rezinovom-osnovanii-450-ml-14-sm 1@2x.png" alt="">
       </div>
     </section>
     <section class="content-wrapper main-section-products">
@@ -102,7 +103,7 @@
       <div class="main-section-products__cards_wrapper">
         <div class="main-section-products__cards cards">
           <div class="main-section-products__cards_image-wrapper">
-            <div class="badge badge-sale badge-new">-30%</div>
+            <div class="badge badge-sale">-30%</div>
             <div class="cards__image">
               <img src="./images/products-card/Card/image@2x.png" alt="">
             </div>
@@ -169,7 +170,26 @@
           <button class="main-section-products__cards_button">В корзину</button>
         </div>
       </div>
-      
+    </section>
+    <section class="content-wrapper slider">
+      <input class="slider__nav" type="radio" name="slider" title="slide1" checked="checked"/>
+      <input class="slider__nav" type="radio" name="slider" title="slide2"/>
+      <div class="  section-baners slider__inner">
+        <div class="section-baners__wrapper baners-yellow">
+          <div class="section-baners__content">
+            <h2 class="section-baners__content_title">Наборы</h2>
+            <p class="section-baners__content_subtitle">для дрессировки</p>
+            <div class="section-baners__content_price">от 840 ₽</div>
+          </div>
+        </div>
+        <div class="section-baners__wrapper baners-blue">
+          <div class="section-baners__content">
+            <h2 class="section-baners__content_title">Микс масел</h2>
+            <p class="section-baners__content_subtitle">пищевая здоровая <br> натуральная добавка</p>
+          </div>
+        </div>
+      </div>
+
     </section>
   </main>
 </body>
