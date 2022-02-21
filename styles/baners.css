@@ -74,7 +74,7 @@
   .slider__nav {
     width: 6px;
     height: 6px;
-    margin: 200px 8px;
+    margin: 200px 8px 55px 8px;
     border-radius: 50%;
     z-index: 10;
     background-color: var(--white);
@@ -110,11 +110,14 @@
 }
 @media (max-width: 550px) {
   .slider__nav {
-    margin: 170px 8px;
+    margin: 170px 8px 55px 8px;
   }
   .section-baners__wrapper {
     max-height: 152px;
     margin-right: 16px;
+  }
+  .section-baners__content {
+    padding: 34px 0px 30px 29px;
   }
   .section-baners__content_title {
     font-size: 21px;

@@ -1,0 +1,19 @@
+.main-section-action__cards {
+  margin-top: 20px;
+  max-width: 236px;
+  margin-right: 16px;
+}
+.main-section-action__image {
+  height: 236px;
+  border-radius: 12px;
+}
+.main-section-action__image img {
+  max-height: 100%;
+}
+.main-section-action__title {
+  margin: 16px 0px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+}
+

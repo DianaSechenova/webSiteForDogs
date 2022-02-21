@@ -15,20 +15,15 @@
 }
 
 .main-section-products__cards_wrapper {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  overflow-x: scroll; */
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
 }
 
 .main-section-products__cards {
-  /* flex: 1 1 auto; */
   margin-top: 20px;
   max-width: 236px;
-  margin-right: 23px;
+  margin-right: 16px;
 }
 .main-section-products__cards:last-child {
   margin-right: 0px;
@@ -43,9 +38,8 @@
 .cards__image img {
   max-height: 100%;
 }
-
 .badge-new,
-.badge-sale {
+.badge-discounts {
   position: absolute;
   top: 0;
   left: 0;
@@ -57,7 +51,7 @@
   color: var(--white);
   border-radius: 20px;
 }
-.badge-sale {
+.badge-discounts {
   background: #f44336;
 }
 .badge-new {
@@ -86,7 +80,7 @@
   line-height: 24px;
   margin-top: 30px;
 }
-.active-sale {
+.active-discounts {
   color: var(--active);
 }
 .cards__content_subtitle {
@@ -122,7 +116,6 @@
   .main-section-products__cards {
     max-width: 187px;
     margin-top: 26px;
-    margin-right: 16px;
   }
   .cards__image {
     height: 124.89px;
