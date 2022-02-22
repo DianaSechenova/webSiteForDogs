@@ -4,7 +4,7 @@
   --white: #ffffff;
   --main-bg: #e5e5e5;
   --border-r: 20px;
-  --active: #F44336;
+  --active: #f44336;
   --date: #7b8e98;
 }
 @font-face {
@@ -25,7 +25,7 @@ html {
 }
 body {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
   background: var(--white);
 }
@@ -63,9 +63,9 @@ img {
 }
 .content-wrapper {
   width: 100%;
-  max-width: calc(1000px + 2rem);
+  max-width: calc(992px + 2rem);
   margin: 0 auto;
-  /* padding: 0 1rem; */
+  padding: 0 1rem;
 }
 
 .text-bold {

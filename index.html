@@ -14,16 +14,18 @@
   <link rel="stylesheet" href="./styles/main-action.css">
   <link rel="stylesheet" href="./styles/main-naws.css">
   <link rel="stylesheet" href="./styles/main-coments.css">
+  <link rel="stylesheet" href="./styles/footer.css">
   <title>Home</title>
 </head>
 <body>
   <div class="header-conteiner">
+    <!-- можно ли этот блок (header-conteiner) разделить на : headre,main,footer? -->
     <header class="content-wrapper header">
-      <div class="header__logo">
-        <div class="header__logo_img">
+      <div class="logo-block">
+        <div class="logo-block__img">
           <img src="./images/logo/Frame 13@2x.png" alt="Logo">
         </div>
-        <div class="header__logo_text">HorDog</div>
+        <div class="logo-block__caption">HorDog</div>
       </div>
       <form class="header__form" action="">
         <input class="header__form_item" type="search" name="" id="" placeholder="Поиск">
@@ -43,19 +45,19 @@
         </button>
       </div>
     </header>
-    <section class="content-wrapper section-banner">
-      <div class="section-banner__text-block">
-        <h1 class="section-banner__text-block_head">Крафтовые лакомства для собак</h1>
-        <p class="section-banner__text-block_description">Всегда свежие лакомства ручной работы с доставкой по России и
+    <section class="content-wrapper header-section-banner">
+      <div class="header-section-banner__text-block"> 
+        <h1 class="header-section-banner__text-block_head">Крафтовые лакомства для собак</h1>
+        <p class="header-section-banner__text-block_description">Всегда свежие лакомства ручной работы с доставкой по России и
           Миру</p>
-        <button class="section-banner__text-block_more-btn">Каталог
+        <button class="header-section-banner__text-block_more-btn">Каталог
           <span class="more-btn_control">
             <img src="./images/arrow/ic-right-arrow@2x.png" alt="arrow">
           </span>
         </button>
       </div>
-      <div class="section-banner__image-block">
-        <div class="section-banner__image-block_img"></div>
+      <div class="header-section-banner__image-block">
+        <div class="header-section-banner__image-block_img"></div>
       </div>
     </section>
     <section class="content-wrapper page-nav__wrapper">
@@ -92,10 +94,10 @@
     </section>
   </div>
   <main class="main">
-    <section class="content-wrapper section-baner">
-      <div class="section-baner__text-block">
-        <h2 class="section-baner__text-block_title">Подарок за первый заказ!</h2>
-        <p class="section-baner__text-block_description">Легкое говяжье - пластины</p>
+    <section class="content-wrapper base-banner">
+      <div class="base-banner__text-block">
+        <h2 class="base-banner__text-block_title">Подарок за первый заказ!</h2>
+        <p class="base-banner__text-block_description">Легкое говяжье - пластины</p>
       </div>
     </section>
     <section class="content-wrapper main-section-products">
@@ -151,6 +153,23 @@
             <div class="cards__content_prise old-prise active-discounts">495 ₽</div>
             <div class="cards__content_subtitle">100 г</div>
             <div class="cards__content_title">Бублик из бычьего корня</div>
+          </div>
+          <button class="main-section-products__cards_button">В корзину</button>
+        </div>
+        <div class="main-section-products__cards cards">
+          <div class="main-section-products__cards_image-wrapper">
+            <div class="badge badge-new">Новинка</div>
+            <div class="cards__image">
+              <img src="./images/products-card/Card4/image@2x.png" alt="">
+            </div>
+            <div class="select">
+              <img class="select__icon" src="./images/products-card/Icons/Favorites@2x.png" alt="">
+            </div>
+          </div>
+          <div class="main-section-products__cards_content cards__content">
+            <div class="cards__content_prise old-prise">240 ₽</div>
+            <div class="cards__content_subtitle">1 шт</div>
+            <div class="cards__content_title">Лопаточный хрящ говяжий для собак</div>
           </div>
           <button class="main-section-products__cards_button">В корзину</button>
         </div>
@@ -617,10 +636,10 @@
         </div>
       </div>
     </section>
-    <section class="content-wrapper section-baner">
-      <div class="section-baner__text-block">
-        <h2 class="section-baner__text-block_title">Подарок за первый заказ!</h2>
-        <p class="section-baner__text-block_description">Легкое говяжье - пластины</p>
+    <section class="content-wrapper base-banner">
+      <div class="base-banner__text-block">
+        <h2 class="base-banner__text-block_title">Подарок за первый заказ!</h2>
+        <p class="base-banner__text-block_description">Легкое говяжье - пластины</p>
       </div>
     </section>
     <section class="content-wrapper main-section-products">
@@ -693,5 +712,57 @@
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="content-wrapper">
+      <div class="footer-banner">
+        <div class="footer-banner__content ">
+          <h2 class="footer-banner__content_title">Остались <br> вопросы?</h2>
+          <p class="footer-banner__content_description">Заполните пожалуйста поля ниже, чтобы мы могли связаться с вами
+          </p>
+          <form action="" class="footer-banner__content_form">
+            <input type="text" name="" id="" placeholder="Ваше имя">
+            <input type="text" name="" id="" placeholder="Телефон или Email">
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+        <div class="footer-banner__image"></div>
+      </div>
+      <div class="footer-main">
+        <div class="footer-main__item footer-main__logo-block">
+          <div class="logo-block">
+            <div class="logo-block__img">
+              <img src="./images/logo/Frame 13@2x.png" alt="Logo">
+            </div>
+            <div class="logo-block__caption">HorDog</div>
+          </div>
+          <p class="slogan">© «Интернет-магазин натуральных лакомств для собак HorDog.ru»</p>
+        </div>
+        <!-- это nav??? -->
+        <div class="footer-main__item footer-main__nav">
+          <a class="footer-main__nav_link" href="#">Каталог</a>
+          <a class="footer-main__nav_link" href="#">Акции</a>
+          <a class="footer-main__nav_link" href="#">Новости</a>
+          <a class="footer-main__nav_link" href="#">Отзывы</a>
+        </div>
+        <div class="footer-main__item footer-main__nav">
+          <a class="footer-main__nav_link" href="#">Оплата и доставка</a>
+          <a class="footer-main__nav_link" href="#">Часто спрашивают</a>
+          <a class="footer-main__nav_link" href="#">Обратная связь</a>
+          <a class="footer-main__nav_link" href="#">Контакты</a>
+        </div>
+        <div class="footer-main__item footer-main__contact">
+          <h2 class="footer-main__contact_title">Мы всегда на связи</h2>
+          <p class="footer-main__contact_number">8 (917) 717-21-79</p>
+          <p class="footer-main__contact_mail">hordog.ru@gmail.com</p>
+          <div class="footer-main__contact_socials socials">
+            <a href="#" class="socials__item"><img src="./images/socials/telegrram/Subtract@2x.png" alt=""></a>
+            <a href="#" class="socials__item"><img src="./images/socials/chat.zip/Subtract@2x.png" alt=""></a>
+            <a href="#" class="socials__item"><img src="./images/socials/viber/viber 1@2x.png" alt=""></a>
+            <a href="#" class="socials__item"><img src="./images/socials/insta/Subtract@2x.png" alt=""></a>
+            <a href="#" class="socials__item"><img src="./images/socials/vk/Subtract@2x.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+  </footer>
 </body>
 </html>
