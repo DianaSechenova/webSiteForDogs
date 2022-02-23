@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  background: linear-gradient(8deg, var(--yellow-bg) 74%, var(--white) 74%);
+  background: linear-gradient(5deg, var(--yellow-bg) 84%, var(--white) 78%);
   margin-top: 105px;
 }
 .footer-banner {
@@ -8,10 +8,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.footer-banner__content {
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
+
 .footer-banner__content_title {
   font-weight: 900;
   font-size: 40px;
@@ -142,7 +139,7 @@
     justify-content: center;
     padding: 20px 0px;
   }
-  .logo-block {
+  .footer__logo-block {
     display: none;
   }
   .footer-main__nav {
@@ -154,5 +151,9 @@
   }
   .footer-main__contact {
     text-align: center;
+  }
+  .footer-banner__content {
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 }
