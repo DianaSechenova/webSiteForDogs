@@ -13,6 +13,7 @@
   font-weight: 900;
   font-size: 40px;
   line-height: 46px;
+  padding-top: 20px;
 }
 .footer-banner__content_description,
 .footer-banner__content_form {
@@ -132,7 +133,7 @@
   }
   .footer-banner__image {
     align-self: flex-end;
-    margin-top: 0px;
+    margin-top: 17px;
   }
   .footer-main {
     flex-direction: column-reverse;
@@ -155,5 +156,29 @@
   .footer-banner__content {
     margin-right: 10px;
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 447px) {
+  .footer-banner__image {
+    width: 329px;
+    height: 226.72px;
+    margin-top: 17px;
+  }
+  .footer-banner__content_title {
+    font-size: 30.9254px;
+    line-height: 36px;
+  }
+  .footer-banner__content_description {
+    font-size: 15.4627px;
+    line-height: 19px;
+    max-width: 259px;
+  }
+}
+@media (max-width: 375px) {
+  .footer-banner__content_form {
+    max-width: 343px;
+  }
+  .footer-banner__content {
+    transform: translateX(calc(50% - 159.5px));
   }
 }
