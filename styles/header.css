@@ -1,7 +1,7 @@
 .header-conteiner {
   width: 100%;
-  overflow: hidden;
-  background: linear-gradient(184deg, var(--yellow-bg) 88%, var(--white) 88%);
+  overflow-x: hidden;
+  background: linear-gradient(183deg, var(--yellow-bg) 88%, var(--white) 88%);
 }
 .header {
   max-height: 152px;
@@ -173,7 +173,6 @@
     transform: rotate(45deg);
   }
   .burger__active .burger__listen::after {
-    width: 20px;
     top: 0;
     transform: rotate(-45deg);
   }
