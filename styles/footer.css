@@ -174,11 +174,14 @@
     max-width: 259px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 358px) {
   .footer-banner__content_form {
-    max-width: 343px;
+    max-width: 284px;
   }
-  .footer-banner__content {
-    transform: translateX(calc(50% - 159.5px));
+  .footer-banner__content_form input {
+    width: 100%;
+  }
+  .footer-banner__image {
+    width: 320px;
   }
 }
